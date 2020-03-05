@@ -62,6 +62,10 @@ class ProductSum
 			{
 			productsum.print1(arr,ind);
 			}
+			else
+			{
+				System.out.println("No");
+			}
 		}
 		else if(ind<k)
 		{
@@ -73,6 +77,9 @@ class ProductSum
 				{
 					System.out.print(1+" ");
 				}
+			}
+			else{
+				System.out.println("No");
 			}
 		}
 		else
@@ -96,7 +103,15 @@ class ProductSum
 				  cpyind++;
 				}
 			}
-			productsum.print2(arrcpy,cpyind);
+			if (productsum.sumOfFactors(arrcpy,cpyind)==s)
+			{
+				productsum.print2(arrcpy,cpyind);
+			}
+			else
+			{
+				System.out.println("No");
+			}
+			
 		}
 			
 		
